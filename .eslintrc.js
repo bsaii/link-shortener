@@ -16,6 +16,10 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react'],
-  rules: {},
+  plugins: ['react', 'baseui'],
+  rules: {
+    'baseui/deprecated-theme-api': 'warn',
+    'baseui/deprecated-component-api': 'warn',
+    'baseui/no-deep-imports': 'warn',
+  },
 }
